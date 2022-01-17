@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cardo", serif;
+}
+
+.navbar {
+  position: relative;
+  border-bottom: 1px solid #f2f2f2;
+  width: 100%;
+}
+
+.img-nav {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.left-nav {
+  margin: 20px;
+  display: inline-block;
+}
+
+.left-nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 0 20px 0 0;
+}
