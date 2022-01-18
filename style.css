@@ -14,7 +14,6 @@ body {
   position: relative;
   border-bottom: 1px solid #f2f2f2;
   width: 100%;
-  background-color: #1515;
 }
 
 .img-nav {
@@ -62,9 +61,31 @@ body {
   height: 550px;
 }
 
-.main h3 {
-  font-size: 32px;
-  width: 690px;
+.main-text-center {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
+  color: #fff;
+}
+
+.main-text-center h3 {
+  font-size: 26px;
+  width: 540px;
+  font-weight: 500;
   line-height: 38px;
+  letter-spacing: 0.2px;
+}
+
+.main-text-center .main-btn {
+  background-color: transparent;
+  padding: 8px 40px;
+  border: 1px solid #ffff;
+  font-family: inherit;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  line-height: 20px;
 }
