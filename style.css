@@ -55,8 +55,7 @@ body {
   position: relative;
   display: flex;
   background-image: url(main.png);
-  top: 0px;
-  left: 0;
+
   width: 1349px;
   height: 550px;
 }
@@ -124,4 +123,50 @@ body {
 
 .content img {
   padding: 10px;
+}
+
+.third {
+  display: flex;
+}
+.third-content {
+  position: relative;
+  width: 25%;
+  height: 247px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.third-content a {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  padding: 0 0 10px 0;
+}
+
+.living-room {
+  background-image: url(/img/living-room.webp);
+}
+
+.home-office {
+  background-image: url(/img/home-office.jpg);
+  background-position: bottom;
+}
+
+.dining-room {
+  background-image: url(/img/dining-room.jpg);
+}
+
+.bedroom {
+  background-image: url(/img/bedroom.jpg);
+}
+
+.living-room a,
+.dining-room a {
+  color: #000;
 }
