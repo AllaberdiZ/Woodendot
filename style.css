@@ -78,7 +78,7 @@ body {
   letter-spacing: 0.2px;
 }
 
-.main-text-center .main-btn {
+.main-btn {
   background-color: transparent;
   padding: 8px 40px;
   border: 1px solid #ffff;
@@ -88,4 +88,40 @@ body {
   cursor: pointer;
   outline: none;
   line-height: 20px;
+  transition: 0.3s;
+}
+
+.main-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.second {
+  display: flex;
+  justify-content: center;
+  padding: 13px 54px;
+  margin: 20px 0;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.content span {
+  padding: 10px 0;
+  font-size: 15px;
+  letter-spacing: 0.2;
+  font-weight: bold;
+}
+
+.content a {
+  color: #000;
+  cursor: pointer;
+}
+
+.content img {
+  padding: 10px;
 }
