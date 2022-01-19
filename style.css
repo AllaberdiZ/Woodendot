@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap");
 
 * {
   box-sizing: border-box;
@@ -173,4 +173,71 @@ body {
 .living-room a,
 .dining-room a {
   color: #000;
+}
+
+.products {
+  display: block;
+  padding-top: 100px;
+}
+
+.product {
+  height: 508px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.product-text {
+  padding: 45px 45px 0 45px;
+  display: block;
+  width: 33.5%;
+}
+
+.product-image {
+  height: 508px;
+  width: 66.5%;
+}
+
+.cloe .product-image {
+  background-image: url(/img/Oak-Cloe2.jpg.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cloe .product-text {
+  text-align: right;
+}
+
+.cloe .product-text h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+.cloe .product-text h2 {
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.product-text h4 {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 20px 0 44px 0;
+}
+
+.cloe .product-text p {
+  width: 99%;
+  font-size: 18px;
+  font-weight: 400;
+  color: #525252;
+}
+
+.cloe .product-text button {
+  margin-top: 70px;
+  padding: 0 10px 5px 0;
+  font-size: 22px;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid;
 }
