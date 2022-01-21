@@ -12,7 +12,9 @@ body {
 }
 
 .navbar {
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 99;
   border-bottom: 1px solid #f2f2f2;
   width: 100%;
   background-color: #ffffff;
@@ -247,4 +249,42 @@ body {
   text-align: center;
   border: none;
   border-bottom: 1px solid;
+}
+
+.slider {
+  display: block;
+  text-align: center;
+  position: relative;
+  width: 1140px;
+  height: 743px;
+  margin: 41px 110px;
+  background-color: yellow;
+}
+
+.slider h1 {
+  font-size: 30px;
+  color: #3a3a3a;
+  font-weight: 700;
+}
+
+.slider p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 19px;
+}
+
+.image-slider {
+  display: flex;
+  flex-direction: row;
+  width: 1120px;
+  height: 584px;
+  margin: 40px auto;
+  background-color: red;
+}
+
+.slide {
+  position: absolute;
+  width: 33%;
+  height: 550px;
+  margin: 0 5px;
 }
