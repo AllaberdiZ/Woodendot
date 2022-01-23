@@ -309,19 +309,23 @@ html {
 }
 
 .insta-u {
+  user-select: none; /* Standard */
+  justify-content: center;
+  align-items: center;
   float: right;
   display: flex;
   margin: 30px 20px;
 }
 
 .insta-u img {
-  position: absolute;
+  margin: auto 5px;
+  position: relative;
   width: 14px;
   height: 14px;
 }
 
 .insta-u p {
-  text-align: center;
+  margin: auto 0;
   font-size: 15px;
   color: #fff;
 }
