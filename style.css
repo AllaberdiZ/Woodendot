@@ -4,11 +4,13 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+html {
   font-family: "Cardo", serif;
   max-width: 1349px;
   background-color: #f1f1f1;
   margin: 0;
+  height: 100%;
 }
 
 .navbar {
@@ -252,13 +254,11 @@ body {
 }
 
 .slider {
-  display: block;
   text-align: center;
-  position: relative;
+  position: absolute;
   width: 1140px;
   height: 743px;
   margin: 41px 110px;
-  background-color: yellow;
 }
 
 .slider h1 {
@@ -275,16 +275,53 @@ body {
 
 .image-slider {
   display: flex;
-  flex-direction: row;
   width: 1120px;
   height: 584px;
   margin: 40px auto;
-  background-color: red;
 }
 
 .slide {
+  position: relative;
+  width: 387px;
+  height: 535px;
+  margin: 10px;
+}
+
+.img1 {
+  background-image: url("1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img2 {
+  background-image: url("2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img3 {
+  background-image: url("3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.insta-u {
+  float: right;
+  display: flex;
+  margin: 30px 20px;
+}
+
+.insta-u img {
   position: absolute;
-  width: 33%;
-  height: 550px;
-  margin: 0 5px;
+  width: 14px;
+  height: 14px;
+}
+
+.insta-u p {
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
 }
