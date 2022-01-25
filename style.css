@@ -255,7 +255,7 @@ html {
 
 .slider {
   text-align: center;
-  position: absolute;
+  position: relative;
   width: 1140px;
   height: 743px;
   margin: 41px 110px;
@@ -274,6 +274,7 @@ html {
 }
 
 .image-slider {
+  position: relative;
   display: flex;
   width: 1120px;
   height: 584px;
@@ -314,7 +315,7 @@ html {
   align-items: center;
   float: right;
   display: flex;
-  margin: 30px 20px;
+  margin: 40px 20px;
 }
 
 .insta-u img {
@@ -328,4 +329,23 @@ html {
   margin: auto 0;
   font-size: 15px;
   color: #fff;
+}
+
+.text-slider {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  padding: 67px 10px;
+}
+
+.text-content {
+  text-align: center;
+}
+
+.txt-slide h2 {
+  font-size: 20px;
+  font-family: inherit;
+  font-style: italic;
+  font-weight: 400;
+  color: #525252;
 }
