@@ -352,6 +352,7 @@ html {
 }
 
 .txt-slide h3 {
+  margin-top: 38px;
   font-family: inherit;
   font-size: 15px;
   font-weight: 400;
@@ -360,4 +361,42 @@ html {
 
 .star-feedback img {
   width: 14px;
+}
+
+.sections {
+  margin: 40px 0;
+  padding: 40px 0 0 0;
+  width: 100%;
+  display: flex;
+}
+
+.section {
+  width: 25%;
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.section h1 {
+  margin: 36px 0 9px 0;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 25px;
+  color: #000;
+}
+
+.section p {
+  margin: 0 17px 64px 17px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.section button {
+  border: none;
+  border-bottom: 1px solid;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 0;
 }
