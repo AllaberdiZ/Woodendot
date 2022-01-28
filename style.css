@@ -373,7 +373,7 @@ html {
 .section {
   width: 25%;
   text-align: center;
-  padding-bottom: 70px;
+  margin-bottom: 30px;
 }
 
 .section h1 {
@@ -399,4 +399,89 @@ html {
   font-size: 15px;
   font-weight: 400;
   padding: 0;
+  cursor: pointer;
+}
+
+.talking-about-us {
+  text-align: center;
+  padding: 10px 0;
+  margin: 40px 0;
+}
+
+.talking-about-us p {
+  font-size: 20px;
+  color: #454545;
+}
+
+.talking-about-us img {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.footer {
+  background-color: #e9e9e9;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  padding: 50px 105px;
+}
+
+.footer .about,
+.help,
+.more {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .about h3,
+.help h3,
+.more h3 {
+  font-size: 21px;
+  font-weight: 400;
+  margin-bottom: 28px;
+}
+
+.footer .about a,
+.help a,
+.more a {
+  font-size: 15px;
+  font-weight: 100;
+  margin-top: 13px;
+  text-decoration: none;
+  color: #000;
+}
+
+.newsletter {
+  width: 40%;
+}
+
+.newsletter button {
+  margin: 15px 55px 0 55px;
+  padding: 11px 41px;
+  font-size: 15px;
+  font-family: inherit;
+  background-color: #fff;
+  border: 1px solid#000;
+  cursor: pointer;
+}
+
+.newsletter .logo img {
+  margin: 20px;
+  width: 66px;
+  height: 66px;
+}
+
+.newsletter .logo .wide {
+  margin: 0 0 0 20px;
+  width: 239px;
+  height: 45px;
+}
+
+.s-media i {
+  font-size: 17px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  padding: 9px;
+  margin: 0 5px;
 }
