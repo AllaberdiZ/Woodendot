@@ -61,11 +61,29 @@ html {
   position: relative;
   display: flex;
   background-image: url(main.png);
-
+  animation: changeBg 10s infinite;
   width: 1349px;
   height: 550px;
 }
 
+@keyframes changeBg {
+  0%,
+  100% {
+    background-image: url("main.png");
+  }
+  20% {
+    background-image: url("main2.webp");
+  }
+  40% {
+    background-image: url("main3.webp");
+  }
+  60% {
+    background-image: url("main4.webp");
+  }
+  80% {
+    background-image: url("main5.webp");
+  }
+}
 .main-text-center {
   position: absolute;
   top: 45%;
@@ -242,6 +260,7 @@ html {
 }
 
 .product-text button {
+  position: relative;
   font-family: "Cardo", serif;
   font-style: italic;
   cursor: pointer;
@@ -250,7 +269,24 @@ html {
   font-size: 20px;
   text-align: center;
   border: none;
-  border-bottom: 1px solid;
+}
+
+.product-text button::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(1);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform-origin: bottom center;
+  transition: transform 0.25s ease-out;
+}
+
+.product-text button:hover::before {
+  transform: scaleX(0.75);
+  transform-origin: bottom center;
 }
 
 .slider {
@@ -374,6 +410,7 @@ html {
   width: 25%;
   text-align: center;
   margin-bottom: 30px;
+  padding-top: 46px;
 }
 
 .section h1 {
@@ -393,13 +430,37 @@ html {
 }
 
 .section button {
+  position: relative;
   border: none;
-  border-bottom: 1px solid;
   font-family: inherit;
   font-size: 15px;
+  background-color: transparent;
   font-weight: 400;
   padding: 0;
   cursor: pointer;
+}
+
+.section button::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(1);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform-origin: bottom center;
+  transition: transform 0.25s ease-out;
+}
+
+.section button:hover::before {
+  transform: scaleX(0.75);
+  transform-origin: bottom center;
+}
+
+.design,
+.made {
+  background-color: #fff;
 }
 
 .talking-about-us {
@@ -484,4 +545,8 @@ html {
   border: 1px solid #000;
   padding: 9px;
   margin: 0 5px;
+  cursor: pointer;
+}
+.s-media a {
+  color: #000;
 }
