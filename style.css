@@ -163,6 +163,22 @@ html {
   background-size: cover;
 }
 
+.third-content:after {
+  content: "\A";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+.third-content:hover:after {
+  opacity: 0.5;
+}
+
 .third-content a {
   font-size: 22px;
   font-weight: 600;
