@@ -161,6 +161,7 @@ html {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  cursor: pointer;
 }
 
 .third-content:after {
@@ -383,7 +384,7 @@ html {
   color: #fff;
 }
 
-.text-slider {
+.slideshow-container {
   user-select: none;
   position: relative;
   width: 100%;
@@ -391,11 +392,13 @@ html {
   padding: 67px 10px;
 }
 
-.text-content {
+.mySlides {
+  display: none;
+  padding: 20px;
   text-align: center;
 }
 
-.txt-slide h2 {
+.mySlides h2 {
   font-size: 20px;
   font-family: inherit;
   font-style: italic;
@@ -403,12 +406,67 @@ html {
   color: #525252;
 }
 
-.txt-slide h3 {
+.mySlides h3 {
   margin-top: 38px;
   font-family: inherit;
   font-size: 15px;
   font-weight: 400;
   font-style: italic;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  position: absolute;
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #888;
+  color: white;
+}
+
+.dot-container {
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active,
+.dot:hover {
+  background-color: #717171;
 }
 
 .star-feedback img {
@@ -426,7 +484,7 @@ html {
   width: 25%;
   text-align: center;
   margin-bottom: 30px;
-  padding-top: 46px;
+  padding: 46px 0 20px 0;
 }
 
 .section h1 {
